@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f7ed">
+    <title>EcoTrack — Small Actions, Greener Planet</title>
+    <meta name="description" content="Track your sustainable habits, recycle waste, and grow your green score with EcoTrack.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">
+        <span class="logo-icon">✳</span>
+        eco<span>track</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="#impact">Your impact</a>
+        <a href="#actions">Take action</a>
+        <a href="#about">Our mission</a>
+    </nav>
+
+    <a href="#actions" class="nav-button">Go green <span>↗</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+</header>
+
+<main>
+
+    <section class="hero section-wrap" id="home">
+        <div class="hero-content">
+            <div class="eyebrow"><span class="status-dot"></span> YOUR PLANET. YOUR IMPACT.</div>
+
+            <h1>A little greener.<br>A lot <span>better.</span></h1>
+
+            <p class="hero-description">
+                Small everyday choices can create a cleaner tomorrow.
+                Track your habits, recycle smarter, and make every action count.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#actions" class="primary-button">Start making an impact <span>↗</span></a>
+                <a href="#impact" class="text-button">Explore your impact ↓</a>
+            </div>
+
+            <div class="hero-proof">
+                <div class="avatar-stack">
+                    <span>🌱</span>
+                    <span>🌎</span>
+                    <span>♻️</span>
+                </div>
+                <p><strong>Every action matters.</strong><br>Start with one small step.</p>
+            </div>
+        </div>
+
+        <div class="hero-art">
+            <div class="art-circle circle-one"></div>
+            <div class="art-circle circle-two"></div>
+
+            <div class="floating-tag tag-top"><span>🌿</span> Grow with purpose</div>
+
+            <div class="plant-card">
+                <div class="plant-illustration">
+                    <div class="plant-sun"></div>
+                    <div class="plant-leaf leaf-one"></div>
+                    <div class="plant-leaf leaf-two"></div>
+                    <div class="plant-leaf leaf-three"></div>
+                    <div class="plant-leaf leaf-four"></div>
+                    <div class="plant-stem"></div>
+                    <div class="plant-pot"></div>
+                </div>
+
+                <div class="plant-caption">
+                    <div>
+                        <span class="mini-label">YOUR DAILY REMINDER</span>
+                        <h3>Be kind to Earth.</h3>
+                    </div>
+                    <span class="heart-icon">♡</span>
+                </div>
+            </div>
+
+            <div class="floating-tag tag-bottom"><span>♻</span> Less waste, more life</div>
+            <div class="sparkle sparkle-one">✳</div>
+            <div class="sparkle sparkle-two">✦</div>
+        </div>
+    </section>
+
+    <section class="ticker">
+        <div class="ticker-track">
+            <span>REDUCE WASTE</span><i>✳</i>
+            <span>REUSE MORE</span><i>✳</i>
+            <span>RECYCLE RIGHT</span><i>✳</i>
+            <span>PROTECT NATURE</span><i>✳</i>
+            <span>REDUCE WASTE</span><i>✳</i>
+            <span>REUSE MORE</span><i>✳</i>
+            <span>RECYCLE RIGHT</span><i>✳</i>
+            <span>PROTECT NATURE</span><i>✳</i>
+        </div>
+    </section>
+
+    <section class="impact-section section-wrap" id="impact">
+        <div class="section-heading">
+            <div>
+                <div class="eyebrow">YOUR GREEN JOURNEY</div>
+                <h2>Little steps.<br><span>Real progress.</span></h2>
+            </div>
+            <p>Your sustainability dashboard. Every number here starts as a sample, ready for you to explore and update.</p>
+        </div>
+
+        <div class="stats-grid">
+            <article class="stat-card green-card">
+                <div class="stat-top"><span>🌳</span><span class="stat-label">SAMPLE TOTAL</span></div>
+                <div class="stat-number"><span id="treeCount">128</span><small>trees</small></div>
+                <p>Trees planted by our community</p>
+                <div class="stat-decoration">✳</div>
+            </article>
+
+            <article class="stat-card cream-card">
+                <div class="stat-top"><span>♻️</span><span class="stat-label">SAMPLE TOTAL</span></div>
+                <div class="stat-number"><span id="plasticCount">64</span><small>kg</small></div>
+                <p>Plastic recycled by our community</p>
+                <div class="progress-track"><div class="progress-fill"></div></div>
+            </article>
+
+            <article class="stat-card dark-card">
+                <div class="stat-top"><span>⭐</span><span class="stat-label">YOUR SCORE</span></div>
+                <div class="stat-number"><span id="greenScore">0</span><small>pts</small></div>
+                <p>Earn points by completing green actions</p>
+                <a href="#actions" class="stat-link">Earn points ↗</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="actions-section section-wrap" id="actions">
+        <div class="section-heading">
+            <div>
+                <div class="eyebrow">MAKE IT COUNT</div>
+                <h2>Choose your <span>green action.</span></h2>
+            </div>
+            <p>Pick an action you've completed today and earn points. Your score updates instantly!</p>
+        </div>
+
+        <div class="actions-grid">
+            <article class="action-card">
+                <div class="action-icon icon-green">♻️</div>
+                <span class="points-badge">+10 POINTS</span>
+                <h3>Recycle plastic</h3>
+                <p>Keep recyclable plastic out of landfills by sorting it correctly.</p>
+                <button class="action-button" data-action="plastic" data-points="10">I did this! <span>↗</span></button>
+            </article>
+
+            <article class="action-card">
+                <div class="action-icon icon-yellow">🌱</div>
+                <span class="points-badge">+15 POINTS</span>
+                <h3>Care for a plant</h3>
+                <p>Water a plant, nurture a sapling, or help a green space thrive.</p>
+                <button class="action-button" data-action="plant" data-points="15">I did this! <span>↗</span></button>
+            </article>
+
+            <article class="action-card">
+                <div class="action-icon icon-pink">🛍️</div>
+                <span class="points-badge">+5 POINTS</span>
+                <h3>Skip single-use plastic</h3>
+                <p>Carry your reusable bag or bottle instead of disposable plastic.</p>
+                <button class="action-button" data-action="reuse" data-points="5">I did this! <span>↗</span></button>
+            </article>
+
+            <article class="action-card">
+                <div class="action-icon icon-blue">💧</div>
+                <span class="points-badge">+10 POINTS</span>
+                <h3>Save water</h3>
+                <p>Make a conscious choice to conserve water in your daily routine.</p>
+                <button class="action-button" data-action="water" data-points="10">I did this! <span>↗</span></button>
+            </article>
+        </div>
+
+        <div class="score-message" id="scoreMessage" role="status" aria-live="polite">
+            🌿 Your green journey starts with one action!
+        </div>
+    </section>
+
+    <section class="mission-section" id="about">
+        <div class="mission-inner section-wrap">
+            <div class="mission-symbol">✳</div>
+            <div class="mission-copy">
+                <div class="eyebrow">WHY ECOTRACK?</div>
+                <h2>A healthier planet<br>starts with <span>us.</span></h2>
+                <p>We believe sustainability should feel simple, rewarding, and possible for everyone. Start where you are. Do what you can. Keep growing.</p>
+                <a href="#actions" class="primary-button">Take your first step <span>↗</span></a>
+            </div>
+            <div class="mission-note">
+                <span>OUR PHILOSOPHY</span>
+                <p>“We don't need a handful of people doing sustainability perfectly. We need millions doing it imperfectly.”</p>
+                <div>ONE PLANET. MANY SMALL ACTIONS. 🌍</div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+    <footer class="footer section-wrap">
+        <a href="#home" class="logo"><span class="logo-icon">✳</span> eco<span>track</span></a>
+        <p>Made with care for the planet 🌱</p>
+        <span>© <span id="year"></span> EcoTrack</span>
+    </footer>
+
+</body>
+</html>
